@@ -1,0 +1,63 @@
+<core:View xmlns:core2="sap.ui.core"
+  controllerName="gms.gmsserviceprofile.controller.serviceProfile"
+	xmlns="sap.suite.ui.commons.networkgraph"
+	xmlns:core="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns:layout="sap.suite.ui.commons.networkgraph.layout"
+	xmlns:m="sap.m"
+	height="100%"
+>
+    <Graph enableWheelZoom="true"
+		   orientation="TopBottom"
+		   nodes="{/nodes}"
+		   lines="{/lines}"
+		   layout="Layered"
+		   searchSuggest="suggest"
+		   search="search"
+		   id="graph">
+           <statuses>
+           <Status
+                key="CustomPink"
+                title="Pink Node"
+                backgroundColor="sapUiChartPaletteQualitativeHue8"
+                borderColor="sapUiContentShadowColor"
+                hoverBorderColor="sapUiContentShadowColor"
+							/>
+           </statuses>
+		<layoutAlgorithm>
+			<layout:LayeredLayout
+					mergeEdges="true"
+					nodePlacement="Simple"
+					nodeSpacing="40"/>
+		</layoutAlgorithm>
+		<nodes>
+			<Node icon="sap-icon://action-settings"
+				  key="{id}"
+				  title="{title}"
+				  width="90"
+				  collapsed="{collapsed}"
+				  attributes="{attributes}"
+				  showActionLinksButton="false"
+				  showDetailButton="false"
+				  descriptionLineSize="0"
+				  shape="Box">
+				<attributes>
+					<ElementAttribute label="{label}" value="{value}"/>
+				</attributes>
+				<image>
+					<NodeImage src="{src}"
+							   width="80"
+							   height="100"/>
+				</image>
+				<actionButtons>
+					<ActionButton title="Add Child" press="onAddChild" icon="sap-icon://add"></ActionButton>
+					<ActionButton title="Edit Node" press="onEditNode" icon="sap-icon://edit"></ActionButton>
+					
+				</actionButtons>
+			</Node>
+		</nodes>
+		<lines>
+			<Line from="{from}" to="{to}" arrowOrientation="None" press="linePress" />
+		</lines>
+	</Graph>
+</core:View>

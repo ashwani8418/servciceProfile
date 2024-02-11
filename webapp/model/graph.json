@@ -1,0 +1,117 @@
+{
+	"nodes": [
+        {
+            "id" : "1",
+            "title": "Service Parameter 1",
+            "description" : "Service Parameter 1",
+            "team": "2",
+            "status": "CustomPink",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "1"
+				}
+			]
+        },
+        {
+            "id" : "2",
+            "title": "Service Parameter 2",
+            "description" : "Service Parameter 2",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "1"
+				}
+			]
+        },
+        {
+            "id" : "3",
+            "title": "Service Parameter 3",
+            "description" : "Service Parameter 3",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "2"
+				}
+			]
+        },
+        {
+            "id" : "4",
+            "title": "Service Parameter 4",
+            "description" : "Service Parameter 4",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "1"
+				}
+			]
+        },
+        {
+            "id" : "5",
+            "title": "Service Parameter 5",
+            "description" : "Service Parameter 5",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "2"
+				}
+			]
+        },
+        {
+            "id" : "6",
+            "title": "Service Parameter 6",
+            "description" : "Service Parameter 6",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "1"
+				}
+			]
+        },
+        {
+            "id" : "7",
+            "title": "Service Parameter 7",
+            "description" : "Service Parameter 7",
+            "team": "2",
+            "attributes": [
+				{
+					"label": "Rank",
+					"value": "2"
+				}
+			]
+        }
+		
+	],
+	"lines": [
+		{
+            "from":"1",
+            "to":"3"
+        },
+        {
+            "from":"1",
+            "to":"2"
+        },
+        {
+            "from":"3",
+            "to":"6"
+        },
+        {
+            "from":"3",
+            "to":"7"
+        },
+        {
+            "from":"2",
+            "to":"5"
+        },
+        {
+            "from":"2",
+            "to":"4"
+        }
+
+	]
+}

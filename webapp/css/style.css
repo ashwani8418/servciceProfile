@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+.sapMDialogScrollCont.sapMDialogStretchContent {
+    margin: 1rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.sapMFlexItemAlignAuto {
+    align-self: start;
+    margin-left: 0.5rem;
+}
